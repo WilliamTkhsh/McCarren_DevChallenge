@@ -1,0 +1,73 @@
+.form-container {
+  margin-top: 3rem;
+}
+
+.form-container > * + * {
+  margin-top: 1rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.15s ease-in-out;
+  box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 2px #BFDBFE;
+  outline: none;
+}
+
+.input-with-remove {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.input-with-remove input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.btn-remove-inside {
+  position: absolute;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #616161;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn-remove-inside:hover {
+  color: #b91c1c;
+}

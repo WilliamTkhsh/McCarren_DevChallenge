@@ -1,0 +1,48 @@
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.7);
+}
+
+.btn-primary {
+  background-color: #2563EB;
+}
+
+.btn-primary:hover {
+  background-color: #1D4ED8;
+}
+
+.btn-black {
+  background-color: #000000;
+}
+
+.btn-black:hover {
+  background-color: #6e6e6e;
+}
+
+.btn-danger {
+  background-color: #DC2626;
+}
+
+.btn-danger:hover {
+  background-color: #B91C1C;
+}
+
+.btn-return {
+  background-color: #333333;
+}
+
+.btn-return:hover {
+  background-color: #474747;
+}

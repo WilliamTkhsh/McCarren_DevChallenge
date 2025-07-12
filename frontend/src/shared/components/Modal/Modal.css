@@ -1,0 +1,114 @@
+
+.modal-overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  width: 100%;
+  max-width: 42rem;
+  transform: translateX(100%);
+  animation: slideInFromRight 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;  
+  padding: 2rem;
+  position: relative;
+}
+
+.modal-actions {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.service-line-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.btn-remove-line {
+  background: transparent;
+  border: none;
+  color: #dc2626;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+
+.profile-view > * + * {
+  margin-top: 0.75rem;
+}
+
+.profile-company-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  padding-right: 12rem;
+}
+
+.profile-description {
+  font-size: 1.5rem;
+  color: #4B5563;
+}
+
+.profile-details {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+.profile-details > * + * {
+  margin-top: 0.5rem;
+}
+
+.profile-detail-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slide-out {
+  animation: slideOutToRight 0.5s forwards;
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
